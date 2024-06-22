@@ -1,6 +1,6 @@
 
 local
-	stringsMineOSEFI,
+	stringsBingOSEFI,
 	stringsChangeLabel,
 	stringsKeyDown,
 	stringsComponentAdded,
@@ -158,7 +158,7 @@ function(statusText, needWait)
 		lines[#lines + 1] = line:gsub("\t", "  ")
 	end
 	
-	local y = drawTitle(#lines, stringsMineOSEFI)
+	local y = drawTitle(#lines, stringsBingOSEFI)
 	
 	for i = 1, #lines do
 		drawCentrizedText(y, colorsText, lines[i])
@@ -458,7 +458,7 @@ while uptime() < deadline do
 			end))
 		end
 
-		menu(stringsMineOSEFI, utilities)
+		menu(stringsBingOSEFI, utilities)
 	end
 end
 
